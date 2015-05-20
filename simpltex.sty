@@ -19,7 +19,7 @@
     \end{figure}
 }
 
-\NewDocumentCommand{\tab}{ d<>{0mm} o{p{0.5\textwidth} p{0.5\textwidth}} m }
+\NewDocumentCommand{\tab}{ D<>{0mm} O{p{0.5\textwidth} p{0.5\textwidth}} m }
 {
     \center{\begin{tabular}{#2}#3\end{tabular}}
     \vspace{#1}
@@ -32,20 +32,27 @@
 }
 \NewDocumentCommand{\funcitem}{m}{\item #1}
 
-\NewDocumentCommand\q{m}
+\NewDocumentCommand{\q}{m}
 {
     \begin{quotation}#1\end{quotation}
 }
 
 %RENAME SECTION TO S
-\NewDocumentCommand\s{m}
+\NewDocumentCommand{\s}{m}
 {
     %\section{\textbf{#1}} Uncomment to make
     %                      every section title bold
     \section{#1}
 }
 %RENAME SUBSECTION TO SUBS
-\NewDocumentCommand\subs{m}
+\NewDocumentCommand{\subs}{m}
 {
     \subsection{#1}
+}
+
+\NewDocumentCommand{\f}{o m}
+{
+    \IfNoValueTF{#1}
+    {\begin{frame}#2\end{frame}}
+    {\begin{frame}{#1}#2\end{frame}}
 }
