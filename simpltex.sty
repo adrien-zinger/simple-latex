@@ -37,12 +37,15 @@
     \begin{quotation}#1\end{quotation}
 }
 
-\NewDocumentCommand\sec{m}
+%RENAME SECTION TO S
+\NewDocumentCommand\s{m}
 {
-    \vspace{2mm}
-    \section{\textbf{#1}}
+    %\section{\textbf{#1}} Uncomment to make
+    %                      every section title bold
+    \section{#1}
 }
-\NewDocumentCommand\subsec{m}
+%RENAME SUBSECTION TO SUBS
+\NewDocumentCommand\subs{m}
 {
     \subsection{#1}
 }
