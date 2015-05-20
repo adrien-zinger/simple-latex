@@ -32,16 +32,16 @@ Examples:
 % Table with two rows and two columns
 tab{
     item 1 & item 2
-    \tabline
+    \row
     item 3 & item 4
 }
 
 % Table with three rows and three columns of 4cm
 tab[p{4cm} p{4cm} p{4cm}]{
     item 1 & item 2 & item 3
-    \tabline
+    \row
     item 4 & item 5 & item 6
-    \tabline
+    \row
     item 7 & item 8 & item 9
 }
 
