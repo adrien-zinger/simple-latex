@@ -19,9 +19,11 @@
     \end{figure}
 }
 
-\NewDocumentCommand{\tab}{ D<>{0mm} O{p{0.5\textwidth} p{0.5\textwidth}} m }
+\NewDocumentCommand{\tab}{ D<>{0mm} D<>{0mm} O{p{0.5\textwidth} p{0.5\textwidth}} m }
 {
-    \center{\begin{tabular}{#2}#3\end{tabular}}
+    \IfNoValueTF{#2}
+    {\center{\begin{tabular}{#3}#4\end{tabular}}}
+    {\hspace{#2}\begin{tabular}{#3}#4\end{tabular}}
     \vspace{#1}
 }
 \NewDocumentCommand{\row}{}{\tabularnewline}
