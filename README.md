@@ -1,6 +1,6 @@
 # simple-latex : Less latex more text
 The little package that makes my relation with LaTeX nice.
-
+(Just add simpltex.sty in your sources, and \usepackage{simpltex})
 ###Summary
 * [Figures in one line](#fig)
 * [List apparent](#li)
