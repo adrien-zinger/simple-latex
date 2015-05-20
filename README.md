@@ -30,7 +30,7 @@ The little package that makes my relation with LaTeX nice.
 ### Split your text in table quick <a id="tab"></a>
 Use:
 ```tex
-\tab<optional-space-after>[optional-tabular-arguments]{}
+\tab<optional-bottom-marge-after><optional-left-marge-before>[optional-tabular-arguments]{}
 ```
 Examples:
 ```tex
@@ -43,7 +43,7 @@ tab{
 
 % Two columns and 5mm space after
 
-tab<5mm>{
+tab<5mm><0mm>{
     text for the left side
     &
     text for the right side
