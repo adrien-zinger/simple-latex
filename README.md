@@ -1,7 +1,14 @@
-# simple-latex
+# simple-latex : Less latex more text
 The little package that makes my relation with LaTeX nice.
 
-### Make figures in one line :
+###Summary
+* [Figures in one line](#fig)
+* [List apparent](#li)
+* [Quick table](#tab)
+* [Sections an subsections](#s)
+* [Frame in 4 characters](#f)
+
+### Make figures in one line <a id="fig"></a>
 ```tex
 % Figure here
 \fig[otpional-graphics-properties]<optional-label>{picture}{title}
@@ -13,7 +20,7 @@ The little package that makes my relation with LaTeX nice.
 \fig{picture}{title}
 ```
 
-### Make list faster and apparent
+### Make list faster and apparent <a id="li"></a>
 ```tex
 \li{
     item 1;
@@ -22,7 +29,7 @@ The little package that makes my relation with LaTeX nice.
 }
 ```
 
-### Split your text in table quick
+### Split your text in table quick <a id="tab"></a>
 Use:
 ```tex
 \tab<optional-space-after>[optional-tabular-arguments]{}
@@ -50,5 +57,19 @@ tab<5mm>{
     text for the left side
     &
     text for the right side
+}
+```
+
+### Section and subsection are now s and subs <a id="s"></a>
+Rename section and redefine your one section style for all (l.41)
+```tex
+\s{title}
+\subs{subtitle}
+```
+
+### Frame is now f <a id="f"></a>
+```tex
+\f[title]{
+    Text in my frame
 }
 ```
